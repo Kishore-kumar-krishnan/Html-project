@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        dt{
+            padding-left: 10px;
+        }
+        h2{
+            padding:5px 5px;
+            text-align: center;
+            height: 40px;
+            background-color: rgb(227, 216, 232);
+        }
+        .container{
+            background-color: cornflowerblue;
+            border: 2px solid black;
+            display: grid;
+            grid-template-areas: 
+            "h h h h h h h h  "
+            "b1 b2 b3 b4 b5 b6 b7 b8 "
+            "f f f f f f f f  ";
+        }
+        .header{
+            height: 50px;
+            border: 2px solid black;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            grid-area: h;
+        }
+        .body1{
+            background-color: aqua;
+            border: 2px solid black;
+            grid-area: b1;
+        }
+        .body2{
+            background-color: aquamarine;
+            border: 2px solid black;
+            grid-area: b2;
+        }
+
+        .body3{
+            background-color:azure ;
+            border: 2px solid black;
+            grid-area: b3;
+        }
+        .body4{
+            background-color: blanchedalmond;
+            border: 2px solid black;
+            grid-area: b4;
+        }
+        .body5{
+            background-color: cadetblue;
+            border: 2px solid black;
+            grid-area: b5;
+        }
+        .body6{
+            background-color: coral;
+            border: 2px solid black;
+            grid-area: b6;
+        }
+        .body7{
+            background-color: cyan;
+            border: 2px solid black;
+            grid-area: b7;
+        }
+        .body8{
+            background-color: darkseagreen;
+            border: 2px solid black;
+            grid-area: b8;
+        }
+       
+        .footer{
+            
+            height: 40px;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            grid-area: f;
+        }
+
+        .list{
+            background-color:rgb(234, 89, 197);
+        }
+    </style>
+</head>
+<body>
+    <h2>Popular Flowers</h2>
+    <hr color="green">
+    <dl class="list">
+        <dt><strong>1.Rose</strong> </dt>
+        <dd>Like the flower itself, the history of the rose is very colorful. Roses have been naturally growing for over 35 million years! However, they were not known to be cultivated until about 5,000 years ago. Their usage began not just as a decorative touch to one’s home, but they were also used for medicinal purposes and to make perfumes, and their petals were even used as confetti for festive occasions. Getting your roses into water quickly is the first step in caring for them. Fill a vase three-fourths full of fresh, cool tap water. The roses will absorb the water, soaking up the nutrients that will travel up to the bloom and create a lively flower. Check the water level in your rose’s vase every day and add more water as needed. Shop these classic flowers for Valentine’s Day!</dd>
+
+        <dt><strong>2. Sunflower </strong></dt>
+        <dd>Sunflowers are one of the most popular flower types and are best known for their dazzling yellow color and large size. They generally symbolize adoration, loyalty, and longevity in the language of flowers. Native Americans view sunflowers as a symbol of harvest and bounty since the flower provides seeds and pigments, in addition to being visually beautiful. Sunflowers need direct sunlight for six to eight hours per day and require hot conditions to flower well. Sunflowers also have long roots that require plenty of room to spread out, so soil should be well dug and not too dense for growth. Avoid over-fertilization or risk your stems breaking in the fall. In addition to being great in a garden, sunflowers make great gifts and look wonderful in bouquets.</dd>
+
+        <dt><strong>3. Hydrangea</strong></dt>
+        <dd>You know summer is here when big, showy hydrangea bushes begin gracing gardens across the country. This perennial, a native of East Asia and the Americas, comprises more than 75 species and 600 cultivated varieties, of which mophead, lacecap, oakleaf, and peegee are the most common. Some hydrangea flowers can turn a pretty pink or blue depending on the acidity or alkalinity of the soil, while others will remain white. Mopheads, lacecaps, and oakleafs bloom on the previous year’s wood and can be pruned in the summer after flowering; peegees bloom on this year’s wood and can be pruned in the late winter, before the new spring growth.</dd>
+
+        <dt><strong>4. Lavender</strong></dt>
+        <dd>Spanish, French, or English lavender are sweet herb garden favorites that provide soothing fragrances, flavorings, and beauty all together in little floral packages. More than 40 species are native to areas surrounding the Mediterranean and are semi-evergreen perennials or sub-shrubs with gray-green, hairy, linear leaves and purple, violet, lavender, or pinkish-white flowers. Tiny glands on the flowers, leaves, and stems of the plant produce the scented oil that is used in perfumes, bath preparations, lavender water, and in aromatherapy to relieve stress and anxiety and bring about sleep. Lavender is also prized as a flavoring in cooking, as an ingredient in teas, and for a monofloral honey. </dd>
+
+        <dt><strong>5. Peony</strong></dt>
+        <dd>Peonies, a beloved flower that blooms in late spring/early summer, come in a wide variety of colors. They range from white to red, coral, purple, pink, and yellow. These flowers make stunning centerpieces and work great in large bouquets. The key to growing a thriving peony is to make sure you plant it at the right time, plant correctly, and, of course, care for it all throughout the year, even when it isn’t necessarily in season. Since peonies can grow rather tall (sometimes as tall as 5 feet!), you’ll need to make sure that the spot you choose is spacious enough. And remember, peonies can come back year after year, so you’ll need to think long term.</dd>
+
+        <dt><strong>6. Daisy</strong></dt>
+        <dd>Daisies are a very popular flower that can be found on every continent other than Antarctica. They belong to one of the largest known plant families and symbolized innocence, a connotation that comes from the Victorian era. Based on what color the daisy is, the flower can take on a different meaning. Daisy flowers prefer full sun and average soil conditions. Depending on the variety, they can grow anywhere from 8 inches to 4 feet. Care tip: Only water during the summer if rainfall is less than 1 inch per week.</dd>
+
+        <dt><strong>7. Orchid</strong></dt>
+        <dd>Did you know that orchids are one of the oldest flowering plants known to man? Scientists speculate that orchids have been around as long as 100 million years. Some of the most popular types of the more than 30,000 that exist are phalaenopsis, dendrobium, cattleya, and vanilla. Orchids generally represent love, fertility, thoughtfulness, and charm. However, each variety of these flower types has its own color and meaning. Phalaenopsis orchids symbolize health and prosperity, while dendrobium represent wisdom and beauty. Cymbidium symbolize strength and nobility, and oncydium orchids symbolize love and talent.</dd>
+
+        <dt><strong>8. Tulip</strong></dt>
+        <dd>There are over 150 species and 3,000 varieties of tulips, which are part of the lily family. Like most common flowers, tulips come in a wide variety of colors and shapes, each of which has its own meaning. As a signal of the arrival of spring, these blooms are often associated with Easter. At one point, tulips were more valuable than gold in Holland during a period called “Tulip Mania,” and their popularity has only spread with time. Tulip bulbs should be planted in the fall, in areas where they can receive partial to full sun. Tulips will fare better in soil that allows for drainage, since over-watering will drown the bulb and roots.</dd>
+
+        <dt><strong>9. Lily</strong></dt>
+        <dd>Lilies are one of the most popular and versatile flowers in the world. Coming in a variety of colors and known for their strong fragrance, this elegant bloom is a show-stopper on its own while also serving as the perfect complement to any bouquet. In fact, lilies are one of the most popular flowers in the world, and it’s not hard to see why. There are over 100 different types of true lilies belonging to the “lilium” genus. Lilies are found predominantly in the Northern Hemisphere.</dd>
+
+        <dt><strong>10. Chrysanthemum </strong> </dt>
+        <dd>Cultivated mums originated in China more than 3,000 years ago, and have become familiar and well-loved fall flowers the world over. Thousands of varieties with unique flower shapes brighten home gardens, containers, median strips, and parking lots from late summer through frost with their delightful orange, red, yellow, purple, or white blooms. Chrysanthemums are easy to grow perennials and will come back year after year if planted early in the season, so that they become established before winter. In addition to their beauty, chrysanthemum flowers can be made into a tea, and the leaves can be eaten as salad greens. </dd>
+
+    </dl>
+    <hr/>
+    <div class="container">
+   <div class="header"><b> Most Expensive Flowers On The Planet</b></div>
+   <div class="body1">
+    <dl>
+        <dt><b>Kadupul flower</b></dt>
+        <dd>The Kadupul flower is considered as the most expensive flower in India. This Sri Lanka’s native flower is so expensive, no other flower can beat the luxuriousness of this flower.
+
+            Because of it’s Cactus roots, each and every Kadupul flower has a very short lifespan and is only able to survive the night.
+            
+            In spite of this, the Kadupul flower is celebrated worldwide for its amazing calming qualities. Sadly, the only way to experience this beautiful flower’s scent is to purchase a bottle of Kadupul perfume. There are only two types of Kadupul flower you will find in Sri Lanka, Epiphyllum Hookeri and the other is Epiphyllum oxypetalum.</dd>
+
+    </dl>
+   </div>
+   <div class="body2">
+    <dt><b>Juliet Rose</b></dt>
+    <dd>Roses have always been the most loved flower around the world. From the black halfeti rose to the osiria rose, their diversity and beauty seem beyond anything, but it would seem that the Julie rose beats them all.
+
+        Juliet rose is a unique flower that took more than 10 years to create that making it one of the most expensive flowers ever developed. The flower has soft peach color petals and looks beautiful when fully open. The Juliet flowers are often used as a wedding flower. Bouquet of this amazing rose actually sells for around £90.</dd>
+
+   </div>
+   <div class="body3">
+    <dt><b>Shenzhen Nongke Orchid</b></dt>
+    <dd>There are some unique and unusual orchids in existence but trust me this one is extra unique. Shenzhen Nongke Orchid was first developed by Chinese agricultural scientists and is man-made. The flower got its name after the Shenzhen Nongke University as it was created at the university.
+
+        Scientists took 8 years to create this unique and elegant orchid which only blooms every 5 years! Shenzhen Nongke University becomes the most expensive flower in the world in year 200 which fetched a surprising £160,000 at an auction.</dd>
+
+   </div>
+   <div class="body4">
+    <dt><b>Saffron crocus</b></dt>
+    <dd>The saffron crocus is another most expensive flower in the world. It is light purple in color but its bright yellow stamen makes it look more elegant. The saffron is widely popular for being a space than a flower, however, is still sold as a bloom.
+
+        Nearly 80,000 flowers are required to create only 500 grams of spice. Saffron crocus is highly used as a spice in cuisines of many different parts of the world. This adds the value of the flower and thus makes it the most expensive flower on the earth.</dd>
+
+
+   </div>
+   <div class="body5">
+   <dt><b>Gold of Kinabalu Orchid</b></dt>
+   <dd>Due to its beauty and uniqueness, the gold of the Kinabalu orchid is the most beloved and expensive flower in the world. Orchids are stunningly beautiful flowers and are only found in the small area of the Kinabalu National Park, Malaysia.
+
+    Gold of Kinabalu Orchid aka Rothschild’s slipper orchid, are large sized open-leafed orchid species. Apart from the fact that it’s only grown in Malaysia, another thing is that it is really hard to grow. As it takes many years to bloom before it finally appears.
+    
+    It is said that one stick of gold of Kinabalu orchid is sold at $5,000.</dd>
+
+   </div>
+   <div class="body6">
+<dt><b>Gloriosa Lily</b></dt>
+<dd>Native only in Asia and southern Africa, the Gloria lily is yet another most expensive flower on the earth for being unique as well as rare. It is also known by various names such as glory lily, fire lily, flame lily, etc. The Latin name of the flower is Gloriosa superba “Rothschildiana”
+
+    The flower is famous for its showy flowers with flexed and pronounced petals and most importantly changing color from top to center. They come in three different colors and are accessible year-round.
+    
+    Nowadays the cost of Gloriosa in the market is around$5-$10 per vine. The reason behind the high price of this species of the lily is for being unique and rare. Yes, they are quite expensive but when they add to your centerpieces or bouquet it adds the perfect texture.</dd>
+
+   </div>
+   <div class="body7">
+ <dt><b>Hydrangea</b></dt>
+ <dd>Hydrangea is a combination of more than 70–75 of flowering plants native to eastern and Southern America and Asia’s. Hydrangea holds the eighth position in the list of most expensive flowers around the world. They come in mainly white blooms, but you can also find pink, blue, light purple, violet hydrangea in very rare case.
+
+    They are popular for their unique and spherical appearance. They can grow up to 3 m in height and cultivate between springs and autumn.</dd>
+
+   </div>
+   <div class="body8">
+<dt><b>Lisianthus</b></dt>
+<dd>The Lisianthus blooms all year-round and can grow up to 5 cm in diameter and 60cm in height. Lisianthus is also known as the Eustoma Grandiflorum and can grow in warm regions like Mexico, southern united states, northern South America and Caribbean.
+
+    The striking colors and large oval petals are just basic reasons for making this flower worldwide famous. They come in a huge variety of colors from white, purple, lavender, as well as blue-violet.
+    
+    They need extreme care while transporting from one place to other as they are too expensive. This unique flower cost around $35 bundle. These flowers survive only for a few weeks, thus they are too expensive.</dd>
+   </div>
+   
+   <div class="footer"><a href="https://medium.com/@jamfox14/9-most-expensive-flowers-on-the-planet-ba012c0ff5c3">More Information?</a></div>
+</div>
+</body>
+</html>
